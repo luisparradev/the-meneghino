@@ -8,7 +8,7 @@
 
 <p>Upload the image to the GitHub repository and update its link in the code. Then fill in the title and body of the text. For the title just write it in the respective field, and for the body, replace it in this line of code and paste it in the editor:</p>
 
-<code><p class="post__excerpt">{Body}</p</code>
+<code>~ <p class="post__excerpt">{Body}</p> ~</code>
 
 <h2>Photo Posts</h2>
 
@@ -18,7 +18,7 @@
 <div class="post__text px-2 pb-2 px-lg-4 pb-lg-4">
  <h2 class="post__title"><a href="{Permalink}">Title</a></h2>
  <p class="post__excerpt">{Caption}</p>
-</div
+</div>
 </code>
 
 <h2>Quote Posts</h2>
