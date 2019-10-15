@@ -8,7 +8,9 @@
 
 <p>Upload the image to the GitHub repository and update its link in the code. Then fill in the title and body of the text. For the title just write it in the respective field, and for the body, replace it in this line of code and paste it in the editor:</p>
 
-> <p class="post__excerpt">{Body}</p>
+<p
+class="post__excerpt">{Body}
+</p>
 
 <h2>Photo Posts</h2>
 
