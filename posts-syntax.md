@@ -14,8 +14,8 @@
 
 <p>Upload the photo directly in the Tumblr's editor, and paste the following code in the caption. Replace {Permalink} with the link of the individual post, Title with the title, and {Caption} with the caption.</p>
 
-'''
-<div class="post__text px-2 pb-2 px-lg-4 pb-lg-4">
+<div>
+ class="post__text px-2 pb-2 px-lg-4 pb-lg-4">
  <h2 class="post__title"><a href="{Permalink}">Title</a></h2>
  <p class="post__excerpt">{Caption}</p>
 </div>
