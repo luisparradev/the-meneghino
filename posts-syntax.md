@@ -2,7 +2,7 @@
 
 <p>For any post, configured as Plain Text/HTML in the editor, call first the theme's stylesheet (update the link every time a new release is published from the GitHub repository):</p>
 
-<code><link rel="stylesheet" id="elementor-animations-css" href="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.2-alpha/style.min.css" type="text/css" media="all"></code>
+  <code><link rel="stylesheet" id="elementor-animations-css" href="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.2-alpha/style.min.css" type="text/css" media="all">
 
 <h2>Text Posts</h2>
 
