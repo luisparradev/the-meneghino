@@ -6,6 +6,7 @@
  <meta charset="UTF-8">
  <meta http-equiv="content-type" content="text/html">
  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+ <meta name="description" content="{MetaDescription}" />
 
  <title>{Title} | {Description} {block:PermalinkPage}{block:PostSummary} — {PostSummary}{/block:PostSummary}{/block:PermalinkPage}</title>
 
@@ -86,7 +87,7 @@
   <div class="container featured__container">
    <div class="row">
     <div class="post mb-100 col-12 featured post--image px-0">
-     <a href="https://longstoryshortdesign.co.uk/how-to-build-a-premium-brand" class="post__image mb-3"><img src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.2-alpha/images/Vortic-Packaging-V2-3.jpg" alt="" data-sr-id="1" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.65s ease-in-out 1s, opacity 0.65s ease-in-out 1s; transition: transform 0.65s ease-in-out 1s, opacity 0.65s ease-in-out 1s; "></a>
+     <a href="https://longstoryshortdesign.co.uk/how-to-build-a-premium-brand" class="post__image mb-3"><img src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.2-alpha/images/6_PIAZZA-DUOMO_IAMMILAN_carlo_stanga_3501.jpg" alt="" data-sr-id="1" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.65s ease-in-out 1s, opacity 0.65s ease-in-out 1s; transition: transform 0.65s ease-in-out 1s, opacity 0.65s ease-in-out 1s; "></a>
      <div class="post__text px-2 py-lg-5" data-sr-id="2" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s ease-in-out 1s, opacity 0.6s ease-in-out 1s; transition: transform 0.6s ease-in-out 1s, opacity 0.6s ease-in-out 1s; ">
       <div class="featured__label mt-2 mb-1">Featured</div>
       <h2 class="post__title"><a href="https://longstoryshortdesign.co.uk/how-to-build-a-premium-brand">How to build a premium brand</a></h2>
@@ -102,22 +103,8 @@
      <div class="posts container grid mt-lg-100 px-0" style="position: relative; height: 3373.37px;">
       <div class="grid-sizer"></div>
       <div class="gutter-sizer"></div>
+
       {block:Posts}
-
-      {block:Text}
-      <div class="post mb-5 mb-lg-100 px-0 post--image post--nocolour" style="position: absolute; left: 0%; top: 0px;">
-       <div class="post__image__wrap mb-4">
-        <div class="post__image__wrap--appear" data-sr-id="3" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(1.3); opacity: 1;transform: translateY(20px) scale(1.3); opacity: 1;">
-         <a href="{Permalink}" class="post__image"><img src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.2-alpha/images/awwwards.jpg" alt=""></a>
-        </div>
-       </div>
-       <div class="post__text px-2">
-        {block:Title}<h2 class="post__title"><a href="{Permalink}">{Title}</a></h2>{/block:Title}
-        <p class="post__excerpt">{Body}</p>
-       </div>
-      </div>
-      {/block:Text}
-
       {block:Photo}
       <div class="post mb-5 mb-lg-100 px-0 post--image post--colour" style="position: absolute; left: 51.9171%; top: 0px;">
        <div class="post__wrap pt-2 pt-lg-4">
@@ -128,90 +115,23 @@
          </div>
         </div>
         <div class="post__text px-2 pb-2 px-lg-4 pb-lg-4">
-         <h2 class="post__title"><a href="{Permalink}">New site and brand launch: Essiell</a></h2>
-         {block:Caption}<p class="post__excerpt">{Caption}</p>{/block:Caption}
+         <h2 class="post__title"><a href="{Permalink}">{Title}</a></h2>
+         {block:Caption}
+         <p class="post__excerpt">{Caption}
+           {block:More}<a href="{Permalink}">(...)</a>{/block:More}</p>
+         {/block:Caption}
+         {block:HasTags}
+         <p class="post__excerpt">
+           {block:Tags}
+           <a href="{TagURL}">{Tag}</a>
+         {/block:Tags}</p>
+         {/block:HasTags}
         </div>
        </div>
       </div>
       {/block:Photo}
-
-      {block:Quote}
-      <div class="post mb-5 mb-lg-100 px-0 post--image post--colour" style="position: absolute; left: 51.9171%; top: 1347px;">
-       <div class="post__wrap pt-2 pt-lg-4">
-        <div class="post__bg" style="background-color: #dad7d5"></div>
-        <div class="post__image__wrap mx-2 mb-2 mx-lg-4 mb-lg-4">
-         <div class="post__image__wrap--appear" data-sr-id="8" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(1.3); opacity: 1;transform: translateY(20px) scale(1.3); opacity: 1;">
-          <a href="https://longstoryshortdesign.co.uk/new-site-launch-amfa" class="post__image"><img src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.2-alpha/images/amfa-layout-01.jpg" alt=""></a>
-         </div>
-        </div>
-        <div class="post__text px-2 pb-2 px-lg-4 pb-lg-4">
-         <h2 class="post__title"><a href="https://longstoryshortdesign.co.uk/new-site-launch-amfa">New site launch: AMFA</a></h2>
-         <p class="post__excerpt">Alexandra Mollof Fine Art is an art advisory service based in London and Sao Paulo. Founded in 2008 by Alexandra Mollof, previously a director of White Cube Gallery, as an independent art advisory service with expertise in international modern and contemporary art. We came on board to design and build a new website to highlight […]</p>
-        </div>
-       </div>
-      </div>
-      {/block:Quote}
-
-      {block:Link}
-      <div class="post mb-5 mb-lg-100 px-0 post--image post--nocolour" style="position: absolute; left: 0%; top: 590px;">
-       <div class="post__image__wrap mb-4">
-        <div class="post__image__wrap--appear" data-sr-id="5" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(1.3); opacity: 1;transform: translateY(20px) scale(1.3); opacity: 1;">
-         <a href="https://longstoryshortdesign.co.uk/something-to-shout-about-get-down-with-digital-marketing" class="post__image"><img src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.2-alpha/images/animation-digital-marketing.gif" alt=""></a>
-        </div>
-       </div>
-       <div class="post__text px-2">
-        <h2 class="post__title"><a href="https://longstoryshortdesign.co.uk/something-to-shout-about-get-down-with-digital-marketing">Something to shout about… Get down with digital marketing.</a></h2>
-        <p class="post__excerpt">It’s high time you started making a fuss about the fabulous stuff you do. You know it, we know it, now the world needs to know it too. You need to get the message out there &amp; start promoting that sweet business you’ve got going on. Where to start though? That’s where our digital marketing […]</p>
-       </div>
-      </div>
-      {/block:Link}
-
-      {block:Chat}
-      <div class="post mb-5 mb-lg-100 px-0 post--image post--nocolour" style="position: absolute; left: 0%; top: 1273px;">
-       <div class="post__image__wrap mb-4">
-        <div class="post__image__wrap--appear" data-sr-id="7" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(1.3); opacity: 1;transform: translateY(20px) scale(1.3); opacity: 1;">
-         <a href="https://longstoryshortdesign.co.uk/premium-vs-luxury" class="post__image"><img src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.2-alpha/images/luxury-wheels.jpg" alt=""></a>
-        </div>
-       </div>
-       <div class="post__text px-2">
-        <h2 class="post__title"><a href="https://longstoryshortdesign.co.uk/premium-vs-luxury">Premium vs luxury</a></h2>
-        <p class="post__excerpt">It’s worth noting there is a difference between a premium and a luxury brand. The key difference here is that a luxury brand, in order to remain luxury, has to have limits on volume of sales. By its nature it can’t be accessible to everyone. Premium on the other hand, can still enjoy large sales […]</p>
-       </div>
-      </div>
-      {/block:Chat}
-
-      {block:Audio}
-      <div class="post mb-5 mb-lg-100 px-0 post--image post--colour" style="position: absolute; left: 0%; top: 1847px;">
-       <div class="post__wrap pt-2 pt-lg-4">
-        <div class="post__bg" style="background-color: #000000"></div>
-        <div class="post__image__wrap mx-2 mb-2 mx-lg-4 mb-lg-4">
-         <div class="post__image__wrap--appear" data-sr-id="9" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(1.3); opacity: 1;transform: translateY(20px) scale(1.3); opacity: 1;">
-          <a href="https://longstoryshortdesign.co.uk/we-like-to-move-it-move-it" class="post__image"><img src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.2-alpha/images/logo-animations-lss.gif" alt=""></a>
-         </div>
-        </div>
-        <div class="post__text px-2 pb-2 px-lg-4 pb-lg-4">
-         <h2 class="post__title"><a href="https://longstoryshortdesign.co.uk/we-like-to-move-it-move-it">We like to move it move it</a></h2>
-         <p class="post__excerpt">We’ve been doing animations in-house for years now, but rarely shouting about it. The projects we’ve been working on recently have required an increasing amount of animation work, making it a crucial part of our workflow, &amp; yet we’ve not taken the time to give it the recognition it deserves. We thought it was high […]</p>
-        </div>
-       </div>
-      </div>
-      {/block:Audio}
-
-      {block:Video}
-      <div class="post mb-5 mb-lg-100 px-0 post--image post--nocolour" style="position: absolute; left: 51.9171%; top: 2007px;">
-       <div class="post__image__wrap mb-4">
-        <div class="post__image__wrap--appear" data-sr-id="10" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(1.3); opacity: 1;transform: translateY(20px) scale(1.3); opacity: 1;">
-         <a href="https://longstoryshortdesign.co.uk/weve-moved" class="post__image"><img src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.2-alpha/images/Screen-Shot-2018-07-18-at-17.png" alt=""></a>
-        </div>
-       </div>
-       <div class="post__text px-2">
-        <h2 class="post__title"><a href="https://longstoryshortdesign.co.uk/weve-moved">We’ve got new digs</a></h2>
-        <p class="post__excerpt">With a heavy heart we say farewell to our old home at Presuming Eds as we move back into the heart of the North Laine. This time we’ve upgraded significantly and are pretty chuffed with our new pad. Hidden behind Bond Street in the centre of town we’re in an old warehouse building, complete with […]</p>
-       </div>
-      </div>
-      {/block:Video}
-
       {/block:Posts}
+
      </div>
     </div>
    </div>
@@ -219,39 +139,13 @@
     <div class="col-12 text-center">
      <hr>
      <div class="pagination-older">
-      <a href="https://longstoryshortdesign.co.uk/blog/page/2">Older Articles</a> </div>
+      <a href="https://longstoryshortdesign.co.uk/blog/page/2">More Trend Spots</a></div>
     </div>
    </div>
   </div>
   <div class="section-cta">
-   <div class="cta-row-one">
-    <a href="tel:+441273777102" class="latest-work cta-item">
-     <span class="h2">Talk to us on the phone</span>
-     <h4>+44 (0) 1273 777 102</h4>
-    </a>
-    <a href="mailto:studio@longstoryshortdesign.co.uk" class="studio-feed cta-item">
-     <span class="h2">Get in touch by email</span>
-     <h4>studio@longstoryshortdesign.co.uk</h4>
-    </a>
-   </div>
    <div class="cta-row-two get-in-touch cta-item">
-    <img src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.2-alpha/images/logo.svg" alt="Long Story Short Design">
-    <div class="menu-footer-container">
-     <ul id="menu-footer" class="menu">
-      <li id="menu-item-2215" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2215"><a href="https://longstoryshortdesign.co.uk/">Home</a></li>
-      <li id="menu-item-2217" class="menu-item menu-item-type-post_type_archive menu-item-object-project menu-item-2217"><a href="https://longstoryshortdesign.co.uk/projects">Projects</a></li>
-      <li id="menu-item-2221" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2221"><a href="https://longstoryshortdesign.co.uk/services/digital">Services</a></li>
-      <li id="menu-item-2214" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2214"><a href="https://longstoryshortdesign.co.uk/about">About</a></li>
-      <li id="menu-item-2212" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2201 current_page_item current_page_parent menu-item-2212"><a href="https://longstoryshortdesign.co.uk/blog" aria-current="page">Blog</a></li>
-      <li id="menu-item-2213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2213"><a href="https://longstoryshortdesign.co.uk/contact">Contact</a></li>
-     </ul>
-    </div>
-   </div>
-   <div class="mobile-footer">
-    <h2>Our Story</h2>
-    <p>We're an award-winning digital design &amp; branding agency based in Brighton, England. Founded in 2009 we've worked with businesses large &amp; small across the board on branding, websites, apps &amp; design. We believe in crafting visual ideas to say as much about a brand in as short a way as possible, to communicate a lot with a little, to say more with less... long story short.</p>
-    <h4><a class="mobile-footer-email" href="mailto:studio@longstoryshortdesign.co.uk">studio@longstoryshortdesign.co.uk</a></h4>
-    <h4><a href="tel:+441273777102">+44 (0) 1273 777 102</a></h4>
+    <img src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.2-alpha/images/logo.svg" alt="The Meneghino">
    </div>
   </div>
  </div>
