@@ -69,8 +69,8 @@
    <div class="main-menu-links">
     <div class="menu-main-container">
      <ul id="menu-main" class="menu">
-      <li id="menu-item-2222" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2201 current_page_item current_page_parent menu-item-2222"><a href="https://longstoryshortdesign.co.uk/blog" aria-current="page">Trend Spots</a></li>
-      <li id="menu-item-1097" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1097"><a href="https://longstoryshortdesign.co.uk/about">About</a></li>
+      <li id="menu-item-2222" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2201 current_page_item current_page_parent menu-item-2222"><a href="https://the-meneghino.tumblr.com/" aria-current="page">Trend Spots</a></li>
+      <li id="menu-item-1097" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1097"><a href="https://the-meneghino.tumblr.com/about">About</a></li>
      </ul>
     </div>
    </div>
@@ -84,18 +84,20 @@
    </svg>
   </div>
 
+  {block:IndexPage}
   <div class="container featured__container">
    <div class="row">
     <div class="post mb-100 col-12 featured post--image px-0">
-     <a href="https://longstoryshortdesign.co.uk/how-to-build-a-premium-brand" class="post__image mb-3"><img src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.2-alpha/images/6_PIAZZA-DUOMO_IAMMILAN_carlo_stanga_3501.jpg" alt="" data-sr-id="1" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.65s ease-in-out 1s, opacity 0.65s ease-in-out 1s; transition: transform 0.65s ease-in-out 1s, opacity 0.65s ease-in-out 1s; "></a>
+     <a href="" class="post__image mb-3"><img src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.2-alpha/images/6_PIAZZA-DUOMO_IAMMILAN_carlo_stanga_3501.jpg" alt="" data-sr-id="1" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.65s ease-in-out 1s, opacity 0.65s ease-in-out 1s; transition: transform 0.65s ease-in-out 1s, opacity 0.65s ease-in-out 1s; "></a>
      <div class="post__text px-2 py-lg-5" data-sr-id="2" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s ease-in-out 1s, opacity 0.6s ease-in-out 1s; transition: transform 0.6s ease-in-out 1s, opacity 0.6s ease-in-out 1s; ">
-      <div class="featured__label mt-2 mb-1">Featured</div>
-      <h2 class="post__title"><a href="https://longstoryshortdesign.co.uk/how-to-build-a-premium-brand">How to build a premium brand</a></h2>
-      <p class="post__excerpt mt-5">What makes a premium brand? The question comes with an answer that varies depending on your industry, product and competitors, but in general, there’s a bunch of questions you can ask yourself or look to address if you want to</p>
+      <div class="featured__label mt-2 mb-1">The Meneghino</div>
+      <h2 class="post__title"><a href="">Cool Hunting in Milan</a></h2>
+      <p class="post__excerpt mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu augue elit. Cras suscipit at nulla non mattis. Fusce rutrum ac leo vel maximus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus euismod tincidunt nisi semper pulvinar.</p>
      </div>
     </div>
    </div>
   </div>
+  {/block:IndexPage}
 
   <div class="container">
    <div class="row">
@@ -103,15 +105,25 @@
      <div class="posts container grid mt-lg-100 px-0" style="position: relative; height: 3373.37px;">
       <div class="grid-sizer"></div>
       <div class="gutter-sizer"></div>
+
       {block:Posts}
 
       {block:Text}
       <div class="post mb-5 mb-lg-100 px-0 post--image post--nocolour" style="position: absolute; left: 0%; top: 0px;">
-       {Body}
+       <div class="post__image__wrap mb-4">
+        <div class="post__image__wrap--appear" data-sr-id="3" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(1.3); opacity: 1;transform: translateY(20px) scale(1.3); opacity: 1;">
+         <a href="{Permalink}" class="post__image"><img src="images/awwwards.jpg" alt=""></a>
+        </div>
+       </div>
+       <div class="post__text px-2">
+        {block:Title}<h2 class="post__title"><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+        <p class="post__excerpt">{Body}</p>
+       </div>
       </div>
       {/block:Text}
 
       {block:Photo}
+      {block:IndexPage}
       <div class="post mb-5 mb-lg-100 px-0 post--image post--colour" style="position: absolute; left: 51.9171%; top: 0px;">
        <div class="post__wrap pt-2 pt-lg-4">
         <div class="post__bg" style="background-color: #000000"></div>
@@ -120,60 +132,100 @@
           {block:HighRes}<a href="{Permalink}" class="post__image"><img src="{PhotoURL-HighRes}" alt=""></a>{/block:HighRes}
          </div>
         </div>
-        {block:Caption}{Caption}{/block:Caption}
-       </div>
-      </div>
-      {/block:Photo}
-
-      {block:Photo}
-      <div class="post mb-5 mb-lg-100 px-0 post--image post--nocolour" style="position: absolute; left: 0%; top: 0px;">
-       <div class="post__image__wrap mb-4">
-        <div class="post__image__wrap--appear" data-sr-id="3" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(1.3); opacity: 1;transform: translateY(20px) scale(1.3); opacity: 1;">
-          {block:HighRes}<a href="{Permalink}" class="post__image"><img src="{PhotoURL-HighRes}" alt=""></a>{/block:HighRes}
+        <div class="post__text px-2 pb-2 px-lg-4 pb-lg-4">
+         {block:Caption}
+         <p class="post__excerpt">{Caption}{block:More}<a href="{Permalink}">Read More</a>{/block:More}</p>
+         {/block:Caption}
         </div>
        </div>
-       <div class="post__text px-2 pb-2 px-lg-4 pb-lg-4">
-        {block:Caption}
-        <p class="post__excerpt">{Caption}{block:More}<a href="{Permalink}">(...)</a>{/block:More}</p>
-        {/block:Caption}
-        {block:HasTags}
-        <p class="post__excerpt">
-          {block:Tags}
-          <a href="{TagURL}">{Tag}</a>
-        {/block:Tags}</p>
-        {/block:HasTags}
-       </div>
-       </div>
       </div>
+      {/block:IndexPage}
+
+      {block:PermalinkPage}
+
+      {/block:PermalinkPage}
+
       {/block:Photo}
 
       {block:Quote}
-      <div class="post mb-5 mb-lg-100 px-0 post--image post--colour" style="position: absolute; left: 51.9171%; top: 1347px;">
-       <div class="post__wrap pt-2 pt-lg-4">
-        <div class="post__bg" style="background-color: #dad7d5"></div>
-         {block:Source}{Source}{/block:Source}
+      <div class="post mb-5 mb-lg-100 px-0 post--image post--nocolour" style="position: absolute; left: 51.9171%; top: 744px;">
+       <div class="post__text px-2">
+        <h2 class="post__title"><a href="{Permalink}">{Quote}</a></h2>
+        {block:Source}<p class="post__excerpt">{Source}</p>{/block:Source}
        </div>
       </div>
       {/block:Quote}
 
       {block:Link}
-      <div class="post mb-5 mb-lg-100 px-0 post--image post--nocolour" style="position: absolute; left: 0%; top: 590px;">
-        {block:Description}{Description}{/block:Description}
+      {block:IndexPage}
+      <div class="post mb-5 mb-lg-100 px-0 post--image post--nocolour" style="position: absolute; left: 0%; top: 1273px;">
+       <div class="post__image__wrap mb-4">
+        <div class="post__image__wrap--appear" data-sr-id="7" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(1.3); opacity: 1;transform: translateY(20px) scale(1.3); opacity: 1;">
+         {block:Thumbnail}<a href="{Permalink}" class="post__image"><img src="{Thumbnail-HighRes}" alt=""></a>{/block:Thumbnail}
+        </div>
+       </div>
+       <div class="post__text px-2">
+        <h2 class="post__title"><a href="{Permalink}" {Target}>{Name}</a></h2>
+        {block:Description}
+        <p class="post__excerpt">{Description}{block:More}<a href="{Permalink}">Read More</a>{/block:More}</p>
+        {/block:Description}
+       </div>
       </div>
+      {/block:IndexPage}
+
+      {block:PermalinkPage}
+
+      {/block:PermalinkPage}
+
       {/block:Link}
+
+      {block:Chat}
+      <div class="post mb-5 mb-lg-100 px-0 post--image post--colour" style="position: absolute; left: 51.9171%; top: 1347px;">
+       <div class="post__wrap pt-2 pt-lg-4">
+        <div class="post__bg" style="background-color: #dad7d5"></div>
+        <div class="post__text px-2 pb-2 px-lg-4 pb-lg-4">
+         {block:Title}<h2 class="post__title"><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+         <p class="post__excerpt">
+           <table>
+               {block:Lines}
+               <tr>
+                   <th>{block:Label}{Label}{/block:Label}</th>
+                   <td>{Line}</td>
+               </tr>
+               {/block:Lines}
+           </table>
+         </p>
+        </div>
+       </div>
+      </div>
+      {/block:Chat}
 
       {block:Audio}
       <div class="post mb-5 mb-lg-100 px-0 post--image post--colour" style="position: absolute; left: 0%; top: 1847px;">
        <div class="post__wrap pt-2 pt-lg-4">
         <div class="post__bg" style="background-color: #000000"></div>
-        {block:Caption}{Caption}{/block:Caption}
+        <div class="post__image__wrap mx-2 mb-2 mx-lg-4 mb-lg-4">
+         <div class="post__image__wrap--appear" data-sr-id="9" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(1.3); opacity: 1;transform: translateY(20px) scale(1.3); opacity: 1;">
+          {AudioPlayer}
+         </div>
+        </div>
+        <div class="post__text px-2 pb-2 px-lg-4 pb-lg-4">
+         {block:Caption}<p class="post__excerpt">{Caption}</p>{/block:Caption}
+        </div>
        </div>
       </div>
       {/block:Audio}
 
       {block:Video}
       <div class="post mb-5 mb-lg-100 px-0 post--image post--nocolour" style="position: absolute; left: 51.9171%; top: 2007px;">
-       {block:Caption}{Caption}{/block:Caption}
+       <div class="post__image__wrap mb-4">
+        <div class="post__image__wrap--appear" data-sr-id="10" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(1.3); opacity: 1;transform: translateY(20px) scale(1.3); opacity: 1;">
+         {block:VideoThumbnail}<img src="{VideoThumbnailURL}" alt=""></img>{/block:VideoThumbnail}
+        </div>
+       </div>
+       <div class="post__text px-2">
+        {block:Caption}<p class="post__excerpt">{Caption}</p>{/block:Caption}
+       </div>
       </div>
       {/block:Video}
 
@@ -182,6 +234,8 @@
      </div>
     </div>
    </div>
+
+   {block:IndexPage}
    <div class="row pagination my-5 my-md-100">
     <div class="col-12 text-center">
      <hr>
@@ -189,12 +243,18 @@
       <a href="https://longstoryshortdesign.co.uk/blog/page/2">More Trend Spots</a> </div>
     </div>
    </div>
+   {/block:IndexPage}
+
   </div>
+
+  {block:IndexPage}
   <div class="section-cta">
    <div class="cta-row-two get-in-touch cta-item">
     <img src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.2-alpha/images/logo.svg" alt="The Meneghino">
    </div>
   </div>
+  {/block:IndexPage}
+
  </div>
 </div>
 
