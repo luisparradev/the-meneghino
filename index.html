@@ -1,66 +1,96 @@
 <!DOCTYPE html>
-<html>
+<!--[if lte IE 9]><html lang="fr" class="has-no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html {block:PermalinkPage}class="is-top has-js is-firefox has-smooth-scroll gr__2ndstreetusa_com show-page has-dom-loaded has-dom-animated" data-shrink-header="" data-template="articles-single" data-theme="light" data-way="down" lang="fr"{/block:PermalinkPage}>
+<!--<![endif]-->
 
 <head>
+{block:IndexPage}
+  <meta charset="UTF-8">
+  <meta http-equiv="content-type" content="text/html">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+  <meta name="description" content="{MetaDescription}"/>
 
- <meta charset="UTF-8">
- <meta http-equiv="content-type" content="text/html">
- <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
- <meta name="description" content="{MetaDescription}"/>
+  <title>{Title} | {Description}</title>
 
- <title>{Title} | {Description} {block:PermalinkPage}{block:PostSummary} — {PostSummary}{/block:PostSummary}{/block:PermalinkPage}</title>
+  {block:Description} <meta name="description" content="{MetaDescription}"> {/block:Description}
 
- {block:Description} <meta name="description" content="{MetaDescription}"> {/block:Description}
+  <link rel="shortcut icon" href="{Favicon}">
+  <link rel="alternate" type="application/rss+xml" href="{RSS}">
+  <link rel="profile" href="https://gmpg.org/xfn/11">
+  <link rel="canonical" href="https://the-meneghino.tumblr.com/">
+  <link rel="next" href="https://longstoryshortdesign.co.uk/blog/page/2">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/images/lss-favicon-32.jpg" sizes="32x32">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/images/lss-favicon-32.jpg" sizes="192x192">
+  <link rel="apple-touch-icon-precomposed" href="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/images/lss-favicon-32.jpg">
+  <link rel="stylesheet" id="elementor-animations-css" href="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/styles/main-style.min.css" type="text/css" media="all">
 
- <link rel="shortcut icon" href="{Favicon}">
- <link rel="alternate" type="application/rss+xml" href="{RSS}">
- <link rel="profile" href="https://gmpg.org/xfn/11">
- <link rel="canonical" href="https://the-meneghino.tumblr.com/">
- <link rel="next" href="https://longstoryshortdesign.co.uk/blog/page/2">
- <link rel="icon" href="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/images/lss-favicon-32.jpg" sizes="32x32">
- <link rel="icon" href="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/images/lss-favicon-32.jpg" sizes="192x192">
- <link rel="apple-touch-icon-precomposed" href="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/images/lss-favicon-32.jpg">
- <link rel="stylesheet" id="elementor-animations-css" href="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/styles/main-style.min.css" type="text/css" media="all">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/e78acb93-e52f-4dcf-8fa7-7a7f4e5e2671.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/easing.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/mt.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/jquery_002.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/jquery-migrate.min.js"></script>
+  <script async="" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/ga.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/fe8140962b.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/wp-embed.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/modernizr.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/slick.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/in-viewport.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/jquery_003.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/scrollify.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/imagesloaded.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/masonry.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/images-loaded.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/scrollreveal.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/menu.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/script.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/embed.min.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+{/block:IndexPage}
 
- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/bootstrap.min.js"></script>
- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/e78acb93-e52f-4dcf-8fa7-7a7f4e5e2671.min.js"></script>
- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/easing.min.js"></script>
- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/mt.min.js"></script>
- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/jquery_002.min.js"></script>
- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/jquery-migrate.min.js"></script>
- <script async="" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/ga.min.js"></script>
- <script src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/fe8140962b.min.js"></script>
- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/wp-embed.min.js"></script>
- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/modernizr.min.js"></script>
- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/slick.min.js"></script>
- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/jquery.min.js"></script>
- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/in-viewport.min.js"></script>
- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/jquery_003.min.js"></script>
- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/scrollify.min.js"></script>
- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/imagesloaded.min.js"></script>
- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/masonry.min.js"></script>
- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/images-loaded.min.js"></script>
- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/scrollreveal.min.js"></script>
- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/menu.min.js"></script>
- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/script.min.js"></script>
- <script src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/embed.min.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+{block:PermalinkPage}
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="2nd STREET is your one of a kind second hand clothing store where you can find high quality designer and vintage items, unique and trendy clothing, shoes and accessories. Buy &amp;amp; sell clothes online or at our Los Angeles store.">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+<meta name="theme-color" content="#f2f2f2">
+<title>{Title}{block:PostTitle} - {PostTitle}{/block:PostTitle}</title>
+<meta name="image" content="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/images/IMG_6760-1680x1120_2.jpg">
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/images/favicon-16x16.png">
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/images/safari-pinned-tab.svg" color="#fc352d">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/styles/post-style.css">
+
+<script type="text/javascript" async="" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/analytics.js"></script>
+<script async="" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/hotjar-1437076.js"></script>
+<script async="" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/modules.js" charset="utf-8"></script>
+{/block:PermalinkPage}
 
 </head>
 
-<body class="blog elementor-default" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+<body class="blog elementor-default" data-gr-c-s-loaded="true" cz-shortcut-listen="true" {block:PermalinkPage}style="opacity: 0;" data-gr-c-s-loaded="true" cz-shortcut-listen="true"{/block:PermalinkPage}>
 
 <div class="white-loader loader"></div>
 <div id="page" class="site main">
+
+  {block:IndexPage}
  <header id="header">
   <div class="burger-wrap">
-   <div class="burger main-menu-link">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-   </div>
+    <div class="burger main-menu-link">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
  </header>
+
  <div class="mobile-header">
   <h4>The Meneghino</h4>
  </div>
@@ -76,13 +106,9 @@
    </div>
   </div>
  </div>
+{/block:IndexPage}
+
  <div id="content" data-position="0">
-  <div class="next-slide">
-   <svg viewBox="0 0 49.5 10.06">
-    <line class="a" y1="5.03" x2="48.3" y2="5.03"></line>
-    <path class="b" d="M41.46,9.83a.49.49,0,0,1,.16-.69L48.07,5,41.62.92a.49.49,0,0,1-.16-.69.5.5,0,0,1,.69-.15l7.12,4.53a.5.5,0,0,1,0,.84L42.15,10a.42.42,0,0,1-.26.08A.51.51,0,0,1,41.46,9.83Z"></path>
-   </svg>
-  </div>
 
   {block:IndexPage}
   <div class="container featured__container">
@@ -147,6 +173,26 @@
 
       {/block:Photo}
 
+      {block:Photoset}
+      {block:IndexPage}
+      <div class="post mb-5 mb-lg-100 px-0 post--image post--colour" style="position: absolute; left: 51.9171%; top: 0px;">
+       <div class="post__wrap pt-2 pt-lg-4">
+        <div class="post__bg" style="background-color: #000000"></div>
+        <div class="post__text px-2 pb-2 px-lg-4 pb-lg-4">
+         {block:Caption}
+         <p class="post__excerpt">{Caption}{block:More}<a href="{Permalink}">Read More</a>{/block:More}</p>
+         {/block:Caption}
+        </div>
+       </div>
+      </div>
+      {/block:IndexPage}
+
+      {block:PermalinkPage}
+
+      {/block:PermalinkPage}
+
+      {/block:Photoset}
+
       {block:Quote}
       <div class="post mb-5 mb-lg-100 px-0 post--image post--nocolour" style="position: absolute; left: 51.9171%; top: 744px;">
        <div class="post__text px-2">
@@ -176,7 +222,6 @@
       {block:PermalinkPage}
 
       {/block:PermalinkPage}
-
       {/block:Link}
 
       {block:Chat}
@@ -257,6 +302,13 @@
 
  </div>
 </div>
+
+{block:PermalinkPage}
+<script nomodule="" src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/polyfill.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/jquery_004.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/vendors.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/luisparradev/the-meneghino@0.4-alpha/scripts/app.js"></script>
+{/block:PermalinkPage}
 
 </body>
 
