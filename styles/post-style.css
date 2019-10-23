@@ -10740,7 +10740,7 @@ screen and (min-width:40em) {
 }
 
 .share__label {
-    background: #ff8c8c;
+    background: #001935;
     border-radius: 2px;
     color: #fff;
     display: none;
@@ -10787,7 +10787,7 @@ screen and (min-width:40em) {
 
 .share__label:before {
     border-bottom: 5px solid transparent;
-    border-right: 5px solid #ff8c8c;
+    border-right: 5px solid #001935;
     border-top: 5px solid transparent;
     content: "";
     height: 0;
